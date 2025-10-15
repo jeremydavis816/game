@@ -1,13 +1,19 @@
+
 body {
     font-family: Arial, sans-serif;
     margin: 20px;
 }
-h1 {
-    color: #333;
+.correct {
+    background-color: lightgreen;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin: 2px;
 }
-form {
-    margin-top: 20px;
-}
-button {
-    margin-top: 10px;
+.incorrect {
+    background-color: lightcoral;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin: 2px;
 }

@@ -1,0 +1,19 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Question 5</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2>Question 5: What is your favorite food?</h2>
+    <form action="index.html" method="get" onsubmit="saveAnswer('q5', this.food.value)">
+        <input type="radio" name="food" value="A"> A) Pizza<br>
+        <input type="radio" name="food" value="B"> B) Sushi<br>
+        <input type="radio" name="food" value="C"> C) Pasta<br>
+        <input type="radio" name="food" value="D"> D) Salad<br>
+        <button type="submit">Submit</button>
+    </form>
+    <script src="create_quiz.js"></script>
+</body>
+</html>

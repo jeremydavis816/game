@@ -1,0 +1,19 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Question 3</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2>Question 3: What pet would you prefer?</h2>
+    <form action="question4.html" method="get" onsubmit="saveAnswer('q3', this.pet.value)">
+        <input type="radio" name="pet" value="A"> A) Dog<br>
+        <input type="radio" name="pet" value="B"> B) Cat<br>
+        <input type="radio" name="pet" value="C"> C) Bird<br>
+        <input type="radio" name="pet" value="D"> D) Fish<br>
+        <button type="submit">Submit</button>
+    </form>
+    <script src="create_quiz.js"></script>
+</body>
+</html>

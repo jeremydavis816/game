@@ -1,0 +1,19 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Question 1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2>Question 1: What is your favorite color?</h2>
+    <form action="question2.html" method="get" onsubmit="saveAnswer('q1', this.color.value)">
+        <input type="radio" name="color" value="A"> A) Blue<br>
+        <input type="radio" name="color" value="B"> B) Red<br>
+        <input type="radio" name="color" value="C"> C) Green<br>
+        <input type="radio" name="color" value="D"> D) Yellow<br>
+        <button type="submit">Submit</button>
+    </form>
+    <script src="create_quiz.js"></script>
+</body>
+</html>

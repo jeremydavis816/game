@@ -1,0 +1,19 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Question 2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2>Question 2: What is your ideal vacation?</h2>
+    <form action="question3.html" method="get" onsubmit="saveAnswer('q2', this.vacation.value)">
+        <input type="radio" name="vacation" value="A"> A) Beach<br>
+        <input type="radio" name="vacation" value="B"> B) Mountains<br>
+        <input type="radio" name="vacation" value="C"> C) City<br>
+        <input type="radio" name="vacation" value="D"> D) Countryside<br>
+        <button type="submit">Submit</button>
+    </form>
+    <script src="create_quiz.js"></script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Question 4</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2>Question 4: What is your favorite season?</h2>
+    <form action="question5.html" method="get" onsubmit="saveAnswer('q4', this.season.value)">
+        <input type="radio" name="season" value="A"> A) Spring<br>
+        <input type="radio" name="season" value="B"> B) Summer<br>
+        <input type="radio" name="season" value="C"> C) Fall<br>
+        <input type="radio" name="season" value="D"> D) Winter<br>
+        <button type="submit">Submit</button>
+    </form>
+    <script src="create_quiz.js"></script>
+</body>
+</html>
