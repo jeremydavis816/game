@@ -1,14 +1,16 @@
 
-const leaderboard = JSON.parse(localStorage.getItem("leaderboard") || "[]");
-leaderboard.sort((a, b) => b.score - a.score);
-const container = document.getElementById("leaderboardContainer");
-leaderboard.forEach(entry => {
+const leaderboard = JSON.parse(localStorage.getItem("leaderboard") || "{}");
+const container = document.getElementById("leaderboard");
+
+Object.entries(leaderboard).forEach(([name, data]) => {
     const div = document.createElement("div");
-    div.innerHTML = `<strong>${entry.name}</strong> - Score: ${entry.score}<br>`;
-    entry.results.forEach(r => {
+    div.innerHTML = `<h3>${name} - Score: ${data.score}</h3>`;
+    const boxes = document.createElement("div");
+    data.answers.forEach(correct => {
         const box = document.createElement("span");
-        box.className = r.correct ? "correct" : "incorrect";
-        div.appendChild(box);
+        box.className = "box " + (correct ? "green" : "red");
+        boxes.appendChild(box);
     });
+    div.appendChild(boxes);
     container.appendChild(div);
 });

@@ -1,0 +1,27 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Quiz Results</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <h2>Your Results</h2>
+    <div id="results"></div>
+    <a href="leaderboard.html">View Leaderboard</a>
+    <script>
+        const results = JSON.parse(localStorage.getItem("latest_result"));
+        const container = document.getElementById("results");
+        if (results) {
+            container.innerHTML = `<p>You got ${results.score} out of ${results.total} correct.</p>`;
+            results.details.forEach((detail, index) => {
+                const div = document.createElement("div");
+                div.innerHTML = `<strong>Question ${index + 1}:</strong> You chose ${detail.guess}, but the correct answer was ${detail.correct}.`;
+                container.appendChild(div);
+            });
+        }
+    </script>
+</div>
+</body>
+</html>

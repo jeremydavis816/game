@@ -1,19 +1,7 @@
 
-body {
-    font-family: Arial, sans-serif;
-    margin: 20px;
-}
-.correct {
-    background-color: lightgreen;
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-    margin: 2px;
-}
-.incorrect {
-    background-color: lightcoral;
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-    margin: 2px;
-}
+body { font-family: Arial, sans-serif; margin: 20px; }
+.container { max-width: 600px; margin: auto; }
+button { margin-top: 10px; display: block; }
+.box { display: inline-block; width: 20px; height: 20px; margin: 2px; }
+.green { background-color: green; }
+.red { background-color: red; }
