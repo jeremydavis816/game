@@ -1,13 +1,23 @@
 
-<!DOCTYPE html>
 <html>
 <head>
     <title>Leaderboard</title>
-    <link rel="stylesheet" href="style.css">
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; }
+        table { border-collapse: collapse; width: 100%; }
+        th, td { border: 1px solid #ccc; padding: 8px; text-align: center; }
+        th { background-color: #f2f2f2; }
+        .correct { background-color: #c8e6c9; }
+        .incorrect { background-color: #ffcdd2; }
+    </style>
 </head>
 <body>
     <h1>Leaderboard</h1>
-    <div id="leaderboardContainer"></div>
-    <script src="leaderboard.js"></script>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Score</th>
+</tr>
+    </table>
 </body>
 </html>
